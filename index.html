@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="outer-container" style="background-color: green">
+      <h1>Cash Register Manager</h1>
+
+      <p>
+        Enter the bill amount and cash given by the customer and know minimum
+        number of notes to return.
+      </p>
+
+      <div class="inner-container" style="background-color: red">
+        <div class="bill-amount-div" style="background-color: aqua">
+          <label for="bill-amount">Bill to be payed:</label><br />
+          <input type="text" id="bill-amount" name="nbill-amount" />
+        </div>
+
+        <div
+          class="outer-cash-container"
+          style="background-color: rgb(247, 8, 155)"
+        >
+          <div class="cash-given-div" style="background-color: orange">
+            <label for="cash-given">Cash given:</label><br />
+            <input type="text" id="cash-given" name="ncash-given" />
+          </div>
+
+          <div class="check-for-notes" style="background-color: yellowgreen">
+            <button id="check-notes">Check for Notes</button>
+          </div>
+        </div>
+
+        <div class="table-holder" style="background-color: violet">
+          <table style="background-color: yellow">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- colout tables rows accrsing to notes -->
+        <!-- only display those rows of valid notes -->
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
