@@ -4,17 +4,9 @@ let outercashcontainer = document.querySelector(".outer-cash-container");
 
 let cashGiven = document.querySelector("#cash-given");
 
-
-
-
 let checkNotes = document.querySelector("#check-notes");
 
-
-
 let tableHolder = document.querySelector(".table-holder");
-
-
-
 
 let smallPara = document.querySelector(".small-para");
 let smallParaCash = document.querySelector(".small-para-cash");
@@ -23,7 +15,7 @@ let smallParaButton = document.querySelector(".small-para-button ");
 let validnumeral = null;
 
 let changeToBeReturned = null;
-let arrofDenominations = [2000, 500, 100, 50, 20, 10, 5, 1];
+let arrofDenominations = [2000, 500, 100, 50, 20, 10, 5, 2, 1];
 
 function hascharacter(myString) {
   return /[a-z]/.test(myString);
@@ -94,11 +86,15 @@ function checknotesclickHandler() {
   } else {
     console.log("all valid numerals");
 
+  
+    let numbcashGiven=Number(cashGiven.value)
+    let numbbillAmount= Number(billAmount.value)
+
     //process the values
 
-    if (cashGiven.value < billAmount.value) {
-      console.log("bill:" + billAmount.value);
-      console.log("cash:" + cashGiven.value);
+    if ( numbcashGiven < numbbillAmount) {
+      console.log("bill:" + numbbillAmount);
+      console.log("cash:" + numbcashGiven);
       console.log("There isnt enough cash");
 
       smallParaButton.classList.add("show");
@@ -106,30 +102,32 @@ function checknotesclickHandler() {
       smallParaButton.classList.remove("show");
       console.log("there is enough cash");
 
-
       tableHolder.classList.add("show");
 
-
-      changeToBeReturned = cashGiven.value - billAmount.value;
+      changeToBeReturned =  numbcashGiven - numbbillAmount;
 
       console.log("changeToBeReturned:" + changeToBeReturned);
 
-      returnChangeInMinNotes(changeToBeReturned) ;
-
+      returnChangeInMinNotes(changeToBeReturned);
     }
+
   }
 }
 
+function returnChangeInMinNotes(change) {
+  let tempchange = change;
 
-
-function returnChangeInMinNotes(change){
-
-
+  let Noofnotes = null;
   console.log("in return change func");
 
+  for (var i = 0; i < arrofDenominations.length; i++) {
+    Noofnotes = Math.trunc(tempchange / arrofDenominations[i]);
 
+    console.log("Denomination: " + arrofDenominations[i]);
+    console.log("No. of notes: " + Noofnotes);
 
+    tempchange = tempchange % arrofDenominations[i];
 
-  
-
+    console.log("tempchange: " + tempchange);
+  }
 }
