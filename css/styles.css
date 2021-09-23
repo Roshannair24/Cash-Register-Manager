@@ -1,31 +1,58 @@
 :root {
-    --blue: #1e90ff;
-    --white: #ffffff;
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  
-
-body{
-    background-color: blue;
+  --blue: #1e90ff;
+  --white: #ffffff;
 }
 
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
 
-.hidden{
+body {
+  background-color: blue;
+}
 
+.hidden {
   display: none;
-
-
 }
 
+.show {
+  display: block;
+}
 
-.show{
+/* note bg */
 
-  display:block;
+#note-2000 {
+  background-color: #d691d0;
+}
 
+#note-500 {
+  background-color: #b5bf9a;
+}
 
+#note-200 {
+  background-color: #f3ba61;
+}
+#note-100 {
+  background-color: #aaa3f3;
+}
+
+#note-50 {
+  background-color: #7cc6c5;
+}
+#note-20 {
+  background-color: #e3e093;
+}
+#note-10{
+  background-color: #d3b89b;
+}
+#note-5 {
+  background-color: #f5db99;
+}
+#note-2 {
+  background-color: #cfcfcf;
+}
+#note-1 {
+  background-color: #cfcfcf;
 }

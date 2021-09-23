@@ -32,28 +32,62 @@
             <label for="cash-given">Cash given:</label><br />
             <input type="text" id="cash-given" name="ncash-given" />
             <br />
-            <p class="small-para-cash hidden"><small>Invalid Cash entry.</small></p>
-
+            <p class="small-para-cash hidden">
+              <small>Invalid Cash entry.</small>
+            </p>
           </div>
 
           <div class="check-for-notes" style="background-color: yellowgreen">
             <button id="check-notes">Check for Notes</button>
+
+            <br />
+            <p class="small-para-button hidden">
+              <small>There isnt enough cash.</small>
+            </p>
           </div>
         </div>
 
         <div class="table-holder hidden" style="background-color: violet">
           <table style="background-color: yellow">
-            <tr>
-              <th>Company</th>
-              <th>Contact</th>
+            <tr >
+              <th>Denomination</th>
+              <th>Number of notes</th>
             </tr>
-            <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
+            <tr class="no-of-notes-row">
+              <td id="note-2000" >2000</td>
+              <td class="no-of-notes">a</td>
             </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
+            <tr class="no-of-notes-row">
+              <td id="note-500">500</td>
+              <td class="no-of-notes">b</td>
+            </tr>
+            <tr class="no-of-notes-row">
+              <td id="note-100">100</td>
+              <td class="no-of-notes">c</td>
+            </tr>
+            <tr class="no-of-notes-row">
+              <td id="note-50">50</td>
+              <td class="no-of-notes">d</td>
+            </tr>
+            <tr class="no-of-notes-row">
+              <td id="note-20">20</td>
+              <td class="no-of-notes">e</td>
+            </tr>
+            <tr class="no-of-notes-row">
+              <td id="note-10">10</td>
+              <td class="no-of-notes">f</td>
+            </tr>
+            <tr class="no-of-notes-row">
+              <td id="note-5">5</td>
+              <td class="no-of-notes">g</td>
+            </tr>
+            <tr class="no-of-notes-row">
+              <td id="note-2">2</td>
+              <td class="no-of-notes">h</td>
+            </tr>
+            <tr class="no-of-notes-row">
+              <td id="note-1">1</td>
+              <td class="no-of-notes">i</td>
             </tr>
           </table>
         </div>
