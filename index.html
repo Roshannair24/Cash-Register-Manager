@@ -21,18 +21,19 @@
           <label for="bill-amount">Bill to be payed:</label><br />
           <input type="text" id="bill-amount" name="nbill-amount" />
           <br />
-         <p>  <small>  tgtthyhh</small>            </p> 
+          <p class="small-para hidden"><small>Invalid bill entry.</small></p>
         </div>
 
         <div
-          class="outer-cash-container"
+          class="outer-cash-container hidden"
           style="background-color: rgb(247, 8, 155)"
         >
           <div class="cash-given-div" style="background-color: orange">
             <label for="cash-given">Cash given:</label><br />
             <input type="text" id="cash-given" name="ncash-given" />
             <br />
-            tgtthyhh
+            <p class="small-para-cash hidden"><small>Invalid Cash entry.</small></p>
+
           </div>
 
           <div class="check-for-notes" style="background-color: yellowgreen">
@@ -40,7 +41,7 @@
           </div>
         </div>
 
-        <div class="table-holder" style="background-color: violet">
+        <div class="table-holder hidden" style="background-color: violet">
           <table style="background-color: yellow">
             <tr>
               <th>Company</th>

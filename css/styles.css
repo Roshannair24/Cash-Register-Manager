@@ -13,3 +13,19 @@
 body{
     background-color: blue;
 }
+
+
+.hidden{
+
+  display: none;
+
+
+}
+
+
+.show{
+
+  display:block;
+
+
+}
