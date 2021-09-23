@@ -12,6 +12,12 @@ let smallPara = document.querySelector(".small-para");
 let smallParaCash = document.querySelector(".small-para-cash");
 let smallParaButton = document.querySelector(".small-para-button ");
 
+let changereturnPara = document.querySelector(".change-to-return");
+
+let notesRowEntire = document.querySelectorAll(".no-of-notes-row");
+
+let notesRow = document.querySelectorAll(".no-of-notes");
+
 let validnumeral = null;
 
 let changeToBeReturned = null;
@@ -86,13 +92,12 @@ function checknotesclickHandler() {
   } else {
     console.log("all valid numerals");
 
-  
-    let numbcashGiven=Number(cashGiven.value)
-    let numbbillAmount= Number(billAmount.value)
+    let numbcashGiven = Number(cashGiven.value);
+    let numbbillAmount = Number(billAmount.value);
 
     //process the values
 
-    if ( numbcashGiven < numbbillAmount) {
+    if (numbcashGiven < numbbillAmount) {
       console.log("bill:" + numbbillAmount);
       console.log("cash:" + numbcashGiven);
       console.log("There isnt enough cash");
@@ -104,13 +109,14 @@ function checknotesclickHandler() {
 
       tableHolder.classList.add("show");
 
-      changeToBeReturned =  numbcashGiven - numbbillAmount;
+      changeToBeReturned = numbcashGiven - numbbillAmount;
 
       console.log("changeToBeReturned:" + changeToBeReturned);
 
+      changereturnPara.innerHTML = changeToBeReturned;
+
       returnChangeInMinNotes(changeToBeReturned);
     }
-
   }
 }
 
@@ -125,6 +131,23 @@ function returnChangeInMinNotes(change) {
 
     console.log("Denomination: " + arrofDenominations[i]);
     console.log("No. of notes: " + Noofnotes);
+
+
+
+
+    notesRow[i].innerText = Noofnotes;
+
+if(Noofnotes!==0){
+
+  notesRowEntire[i].classList.add("show");
+
+
+}
+
+
+
+
+
 
     tempchange = tempchange % arrofDenominations[i];
 

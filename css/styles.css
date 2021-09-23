@@ -3,14 +3,23 @@
   --white: #ffffff;
 }
 
-/* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  background-color: blue;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .hidden {
@@ -19,6 +28,26 @@ body {
 
 .show {
   display: block;
+}
+
+.upper-fillet {
+  border-top-left-radius: 1rem;
+
+  border-top-right-radius: 1rem;
+}
+
+.all-fillet {
+  border-radius: 1rem;
+}
+
+.all-fillet-small {
+  border-radius: 0.75rem;
+}
+
+.lower-fillet {
+  border-bottom-left-radius: 1rem;
+
+  border-bottom-right-radius: 1rem;
 }
 
 /* note bg */
@@ -44,7 +73,7 @@ body {
 #note-20 {
   background-color: #e3e093;
 }
-#note-10{
+#note-10 {
   background-color: #d3b89b;
 }
 #note-5 {
@@ -55,4 +84,61 @@ body {
 }
 #note-1 {
   background-color: #cfcfcf;
+}
+
+/* note bg end */
+
+.outer-container {
+  margin: 1rem;
+  width: 28rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+
+.outer-container .text-container {
+  background-color: red;
+}
+
+.outer-container .inner-container {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container-centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.input-field {
+  width: 80%;
+  height: 1.5rem;
+
+  border-style: none;
+
+  padding: 0;
+
+  text-align: center;
+}
+
+
+.btn-notechecker{
+
+
+padding: 0;
+border-style: none;
+
+
+height: 2rem;
+width:7rem;
+
+
+border-radius: 0.5rem;
+
 }
