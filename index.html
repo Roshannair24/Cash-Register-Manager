@@ -12,9 +12,9 @@
       <div class="text-container">
         <h1>Cash Register Manager</h1>
 
-        <p>
+        <p> <small>
           Enter the bill amount and cash given by the customer and know minimum
-          number of notes to return.
+          number of notes to return.</small>
         </p>
       </div>
 
@@ -31,14 +31,8 @@
           <p class="small-para hidden"><small>Invalid bill entry.</small></p>
         </div>
 
-        <div
-          class="outer-cash-container hidden"
-          style="background-color: rgb(247, 8, 155)"
-        >
-          <div
-            class="cash-given-div container-centering"
-        
-          >
+        <div class="outer-cash-container hidden">
+          <div class="cash-given-div container-centering">
             <label for="cash-given"> <p>Cash given:</p> </label><br />
             <input
               class="input-field all-fillet-small"
@@ -52,12 +46,9 @@
             </p>
           </div>
 
-          <div
-            class="check-for-notes container-centering"
-        
-          >
+          <div class="check-for-notes container-centering">
             <button class="btn-notechecker" id="check-notes">
-              <p> <strong> Check for Notes</strong>      </p>   
+              <p><strong> Check for Notes</strong></p>
             </button>
 
             <br />
@@ -67,50 +58,50 @@
           </div>
         </div>
 
-        <div class="table-holder hidden" style="background-color: violet">
+        <div class="table-holder hidden">
           <p>Change to return: <span class="change-to-return"></span></p>
-          <table style="background-color: yellow">
+          <table >
             <tr>
-              <th>Denomination</th>
-              <th>Number of notes</th>
+              <th><p>Denomination</p></th>
+              <th><p>Number of notes</p></th>
             </tr>
             <tr
               class="no-of-notes-row hidden"
-              style="background-color: rgb(72, 218, 84)"
+      
             >
-              <td id="note-2000">2000</td>
+              <td   class="note"   id="note-2000">2000</td>
               <td class="no-of-notes">a</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-500">500</td>
-              <td class="no-of-notes">b</td>
+              <td   class="note" id="note-500">500</td>
+              <td class="no-of-notes ">b</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-100">100</td>
+              <td  class="note" id="note-100">100</td>
               <td class="no-of-notes">c</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-50">50</td>
+              <td  class="note"  id="note-50">50</td>
               <td class="no-of-notes">d</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-20">20</td>
+              <td  class="note"  id="note-20">20</td>
               <td class="no-of-notes">e</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-10">10</td>
+              <td  class="note"   id="note-10">10</td>
               <td class="no-of-notes">f</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-5">5</td>
+              <td  class="note"   id="note-5">5</td>
               <td class="no-of-notes">g</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-2">2</td>
+              <td   class="note"   id="note-2">2</td>
               <td class="no-of-notes">h</td>
             </tr>
             <tr class="no-of-notes-row hidden">
-              <td id="note-1">1</td>
+              <td  class="note"   id="note-1">1</td>
               <td class="no-of-notes">i</td>
             </tr>
           </table>

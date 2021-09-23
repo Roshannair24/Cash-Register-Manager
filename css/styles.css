@@ -1,6 +1,13 @@
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
+  --bgcolor: #222831;
+  --divbgcolor: #393e46;
+  --highlight: #00adb5;
+  --owcolor: #eeeeee;
+
+  --dark-grey: #374151;
+  --off-white: #f3f4f6;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -11,10 +18,14 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bgcolor);
+  color: var(--owcolor);
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
+  color: var(--highlight);
 }
 
 p {
@@ -95,15 +106,18 @@ p {
   padding-right: 0.5rem;
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  background-color: var(--divbgcolor);
+  border-style: solid;
+  border-color: var(--highlight);
+  text-align: center;
 }
 
-.outer-container .text-container {
-  background-color: red;
+.outer-container .text-container p {
+  width: 80%;
+  margin: auto;
 }
 
 .outer-container .inner-container {
-
   display: flex;
   flex-direction: column;
 }
@@ -125,20 +139,84 @@ p {
   padding: 0;
 
   text-align: center;
+
+outline: none;
+
+
+  background-color: var(--owcolor);
 }
 
+.btn-notechecker {
+  padding: 0;
+  border-style: solid;
 
-.btn-notechecker{
+  height: 2rem;
+  width: 7rem;
+  background-color: var(--divbgcolor);
+  border-radius: 0.5rem;
+  border-color: var(--highlight);
+  border-width: 2px;
+
+  color: var(--highlight);
+
+  transition: all 0.5s ease;
+}
+
+.btn-notechecker:hover {
 
 
-padding: 0;
-border-style: none;
+background-color:var(--highlight) ;
 
+color: var(--divbgcolor);
 
-height: 2rem;
-width:7rem;
+transition: all 0.5s ease;
 
+}
 
-border-radius: 0.5rem;
+.change-to-return {
+  font-weight: 700;
 
+  /* color: var(--blue); */
+  color: cyan;
+
+  font-size: large;
+  padding-left: 0.5rem;
+}
+
+.table-holder {
+  text-align: center;
+}
+
+.table-holder table {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  border-collapse: separate;
+  border-spacing: 0.5rem 0.5rem;
+}
+
+.table-holder table tr {
+  align-items: center;
+}
+
+.table-holder table tr th {
+  height: 1.5rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.table-holder table tr td {
+  height: 1.5rem;
+  width: 8rem;
+
+  border-radius: 0.5rem;
+}
+
+.note {
+  color: black;
 }
